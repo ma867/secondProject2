@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" style="font-family: 'Poppins', sans-serif;">
+                <br>
+                <h1>Welcome to our home page!</h1>
+                </br>
+                </br>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm ">
+                <?php
+            include ('../../src/File.php');
+            $records = File::readCSVtoArray("../data/data.csv", 'Album');
+            $table = File::printArrayAsTable($records);
+            echo $table;
+            ?>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{
+  "name": "malzate/second-project2",
+  "type": "project",
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "heroku/heroku-buildpack-php": "*"
+  },
+  "license": "mit",
+  "authors": [
+    {
+      "name": "ma867",
+      "email": "ma867@njit.edu"
+    }
+  ],
+  "require": {
+    "silex/silex": "^2.0.4",
+    "monolog/monolog": "^1.22",
+    "twig/twig": "^2.0",
+    "symfony/twig-bridge": "^3",
+    "alrik11es/cowsayphp": "^1.2",
+    "php" : "^5.5 || ^7.0"
+  }
+}
